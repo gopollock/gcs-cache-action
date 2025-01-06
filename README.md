@@ -2,7 +2,7 @@
 
 # Google Cloud Storage Cache Action
 
-![License](https://img.shields.io/github/license/MansaGroup/gcs-cache-action?style=flat-square) ![GitHub Issues](https://img.shields.io/github/issues/mansagroup/gcs-cache-action?style=flat-square) ![GitHub Stars](https://img.shields.io/github/stars/MansaGroup/gcs-cache-action?style=flat-square)
+![License](https://img.shields.io/github/license/MansaGroup/gcs-cache-action?style=flat-square) ![GitHub Issues](https://img.shields.io/github/issues/gopollock/gcs-cache-action?style=flat-square) ![GitHub Stars](https://img.shields.io/github/stars/MansaGroup/gcs-cache-action?style=flat-square)
 
 GitHub already provides an awesome action to cache your workload
 to Azure's servers hosted in United States. However, if you are
@@ -28,7 +28,7 @@ contain your target Google Cloud Storage bucket. **As simple as that.**
 
 - name: Cache the node_modules
   id: node-modules-cache
-  uses: mansagroup/gcs-cache-action@v2
+  uses: gopollock/gcs-cache-action@v1
   with:
     bucket: my-ci-cache
     path: node_modules
@@ -77,7 +77,7 @@ This GitHub action will output the following values:
 
 - name: Cache the node_modules and npm cache
   id: node-modules-cache
-  uses: mansagroup/gcs-cache-action@v2
+  uses: gopollock/gcs-cache-action@v1
   with:
     bucket: my-ci-cache
     path: |
